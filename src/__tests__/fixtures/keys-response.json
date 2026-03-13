@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "errors": [],
+  "messages": [],
+  "result": [
+    { "key": "$metadata.service", "lastSeenAt": 1710000000, "type": "string" },
+    { "key": "$metadata.level", "lastSeenAt": 1710000000, "type": "string" },
+    { "key": "$metadata.message", "lastSeenAt": 1710000000, "type": "string" },
+    { "key": "$metadata.id", "lastSeenAt": 1710000000, "type": "string" },
+    { "key": "$workers.wallTimeMs", "lastSeenAt": 1710000000, "type": "number" },
+    { "key": "$workers.cpuTimeMs", "lastSeenAt": 1710000000, "type": "number" },
+    { "key": "$workers.outcome", "lastSeenAt": 1710000000, "type": "string" },
+    { "key": "$workers.scriptName", "lastSeenAt": 1710000000, "type": "string" }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "errors": [],
+  "messages": [],
+  "result": {
+    "events": {
+      "events": [
+        {
+          "timestamp": 1710000000000,
+          "$workers": {
+            "scriptName": "api-gateway",
+            "outcome": "ok",
+            "eventType": "fetch",
+            "cpuTimeMs": 3,
+            "wallTimeMs": 42,
+            "event": {
+              "request": {
+                "url": "https://api.example.com/v1/users",
+                "method": "GET",
+                "path": "/v1/users"
+              },
+              "response": {
+                "status": 200
+              },
+              "rayId": "abc123def456"
+            }
+          },
+          "$metadata": {
+            "id": "req-001",
+            "service": "api-gateway",
+            "level": "info",
+            "message": "Request completed",
+            "type": "fetch",
+            "trigger": "fetch"
+          }
+        },
+        {
+          "timestamp": 1709999990000,
+          "$workers": {
+            "scriptName": "api-gateway",
+            "outcome": "ok",
+            "eventType": "fetch",
+            "cpuTimeMs": 5,
+            "wallTimeMs": 120,
+            "event": {
+              "request": {
+                "url": "https://api.example.com/v1/orders",
+                "method": "POST",
+                "path": "/v1/orders"
+              },
+              "response": {
+                "status": 201
+              },
+              "rayId": "xyz789ghi012"
+            }
+          },
+          "$metadata": {
+            "id": "req-002",
+            "service": "api-gateway",
+            "level": "info",
+            "message": "Order created",
+            "type": "fetch",
+            "trigger": "fetch"
+          }
+        },
+        {
+          "timestamp": 1709999980000,
+          "$workers": {
+            "scriptName": "api-gateway",
+            "outcome": "exception",
+            "eventType": "fetch",
+            "cpuTimeMs": 1,
+            "wallTimeMs": 8,
+            "event": {
+              "request": {
+                "url": "https://api.example.com/v1/users/999",
+                "method": "GET",
+                "path": "/v1/users/999"
+              },
+              "response": {
+                "status": 500
+              },
+              "rayId": "err456jkl789"
+            }
+          },
+          "$metadata": {
+            "id": "req-003",
+            "service": "api-gateway",
+            "level": "error",
+            "message": "Internal server error",
+            "error": "TypeError: Cannot read property 'id' of undefined",
+            "type": "fetch",
+            "trigger": "fetch",
+            "statusCode": 500
+          }
+        }
+      ],
+      "count": 3
+    },
+    "statistics": {
+      "bytes_read": 4096,
+      "elapsed": 150,
+      "rows_read": 3,
+      "abr_level": 0
+    }
+  }
+}

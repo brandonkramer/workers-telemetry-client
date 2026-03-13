@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "errors": [],
+  "messages": [],
+  "result": [
+    { "dataset": "cloudflare-workers", "key": "$metadata.service", "type": "string", "value": "api-gateway" },
+    { "dataset": "cloudflare-workers", "key": "$metadata.service", "type": "string", "value": "auth-worker" },
+    { "dataset": "cloudflare-workers", "key": "$metadata.service", "type": "string", "value": "cron-handler" }
+  ]
+}
