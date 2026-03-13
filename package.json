@@ -1,6 +1,6 @@
 {
   "name": "@bk.cc/workers-telemetry-client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Lightweight TypeScript client for the Cloudflare Workers Observability Telemetry API",
   "type": "module",
   "main": "dist/index.js",
